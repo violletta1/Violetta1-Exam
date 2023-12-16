@@ -43,6 +43,8 @@ jobs:
       with:
         node-version: 18.x
         cache: 'npm'
+    - name: Install Dependencies
+      run: npm install
     - name: Install playwright
       run: npx playwright install
     - name: Run the UI test
